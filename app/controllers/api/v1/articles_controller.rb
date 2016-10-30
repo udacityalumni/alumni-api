@@ -57,6 +57,7 @@ class Api::V1::ArticlesController < ApplicationController
                                     :featured, :spotlighted,
                                     :content, :json,
                                     :feature_image, :status,
+                                    :tags)
                                     tags_attributes: [:tag])
   end
 end

@@ -1,0 +1,24 @@
+h1. The LOTR Wiki
+
+This wiki is [[awesome]] and [[badass]]. You can learn about [[Bilbo Baggins]] or some [[evil|Eye Of Sauron]] stuff.
+
+We can also talk about [[Code]] here.
+
+See how [[Formatting]] works.
+
+How about parens? [[Some (cool) Thing]]
+
+See [[Names / Places]].
+
+[[Math]] is fun!
+
+h2. Formatting Examples
+
+* [[asciidoc]] [[a2]]
+* [[creole]]
+* [[markdown]]
+* [[orgmode]]
+* [[pod]]
+* [[rdoc]]
+* [[rst]]
+* [[textile]]

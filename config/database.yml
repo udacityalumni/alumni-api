@@ -3,15 +3,11 @@ default: &default
   encoding: unicode
   pool: 5
   timeout: 5000
-  username: postgres
-  # please see the update below about using hostnames to
-  # access linked services via docker-compose
-  host: <%= ENV['POSTGRES_PORT_5432_TCP_ADDR'] %>
-  port: <%= ENV['POSTGRES_PORT_5432_TCP_PORT'] %>
+  username: root
 
 development:
   <<: *default
-  database: app_development
+  database: udacity_alumni_dev
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run
@@ -19,4 +15,4 @@ development:
 # production.
 test:
   <<: *default
-  database: app_test
+  database: udacity_alumni_test

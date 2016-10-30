@@ -1,4 +1,6 @@
 module ArticleMutations
+<<<<<<< HEAD
+=======
   Create = GraphQL::Relay::Mutation.define do
     name 'CreateArticle'
     input_field :auth_token, !types.String
@@ -34,6 +36,7 @@ module ArticleMutations
       end
     end
   end
+>>>>>>> master
   Update = GraphQL::Relay::Mutation.define do
     name 'UpdateArticle'
     input_field :auth_token, !types.String
@@ -43,6 +46,13 @@ module ArticleMutations
     return_field :article, ArticleType
     resolve -> (inputs, ctx) do
       user = User.find_by(auth_token: inputs[:auth_token])
+<<<<<<< HEAD
+      article_inputs = inputs[:article].to_h
+      if user
+        article = Article.find_by_id(inputs[:id])
+        article.update(article_inputs)
+        article.save!
+=======
       article_inputs = inputs[:article]
       if user
         article = Article.find_by_id(inputs[:id])
@@ -82,6 +92,7 @@ module ArticleMutations
         {
           deleted_id: id
         }
+>>>>>>> master
       end
     end
   end
