@@ -79,4 +79,4 @@ Rails v5 Api Mode
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
-Thanks to everyone of the amazing contributors!
+Thanks to all of the collaborators!!
